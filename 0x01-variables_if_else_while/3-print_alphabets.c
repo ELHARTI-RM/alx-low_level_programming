@@ -1,20 +1,24 @@
 #include <stdio.h>
 
-/**
- * main - write lower and uppercase alph
- *
- * Return: 0 (success)
- *
- */
 int main(void)
 {
-	int ch;
+    char lower = 'a';
+    char upper = 'A';
+    int i;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-		putchar(ch);
-	for (ch = 'A'; ch <= 'Z'; ch++)
-		putchar(ch);
-	putchar('\n');
-	return (0);
+    for (i = 0; i < 26; i++)
+    {
+        putchar(lower);
+        lower++;
+    }
+
+    for (i = 0; i < 26; i++)
+    {
+        putchar(upper);
+        upper++;
+    }
+
+    putchar('\n');
+    return (0);
 }
-;
+

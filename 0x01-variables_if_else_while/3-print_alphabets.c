@@ -8,22 +8,12 @@
  */
 int main(void)
 {
-    char lower = 'a';
-    char upper = 'A';
-    int i;
+	int ch;
 
-    for (i = 0; i < 26; i++)
-    {
-        putchar(lower);
-        lower++;
-    }
-
-    for (i = 0; i < 26; i++)
-    {
-        putchar(upper);
-        upper++;
-    }
-
-    putchar('\n');
-    return (0);
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
+	putchar('\n');
+	return (0);
 }

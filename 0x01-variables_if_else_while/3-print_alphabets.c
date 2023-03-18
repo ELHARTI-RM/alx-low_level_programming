@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - write lower and uppercase alph
+ *
+ * Return: 0 (success)
+ *
+ */
 int main(void)
 {
     char lower = 'a';

@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int main(void)
 {
     char lower = 'a';
@@ -21,4 +19,3 @@ int main(void)
     putchar('\n');
     return (0);
 }
-

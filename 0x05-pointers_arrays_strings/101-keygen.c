@@ -3,28 +3,31 @@
 #include <time.h>
 
 /**
- * main - Entry point
- *
- * Description: Generates a random password
- *
- * Return: The generated password
+ * main - program generate random password
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int r = 0;
-	int c = 0;
-	time_t t;
+	int passw[100], i, sum, n;
 
-	srand((unsigned int) time(&t));
-	while (c < 2772)
+	sum = 0;
+
+	srand(time(NULL));
+
+	for (i = 0; i < 100; i++)
 	{
-		r = rand() % 128;
-		if ((c + r) > 2772)
+		passw[i] = rand() % 78;
+		sum += (passw[i] + '0');
+		putchar(passw[i] + '0');
+		if ((2772 - sum) - '0' < 78)
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
 			break;
-		c = c + r;
-		printf("%c", r);
+		}
 	}
-	printf("%c\n", (2772 - c));
+
 	return (0);
-}
+}}

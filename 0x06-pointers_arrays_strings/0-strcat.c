@@ -4,6 +4,7 @@
  * _strcat - concatenates two strings,
  * @dest: destination
  * @src: source
+ *
  * Return: pointer to dest string
  */
 

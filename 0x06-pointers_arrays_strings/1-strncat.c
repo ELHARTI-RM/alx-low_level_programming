@@ -4,7 +4,7 @@
  * _strncat - contains n or more bytes
  * @dest: destination
  * @src: source
- *@n: number of bytes
+ * @n: number of bytes
  * Return: pointer to dest string
  */
 char *_strncat(char *dest, char *src, int n)

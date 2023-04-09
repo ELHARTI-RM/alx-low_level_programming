@@ -15,15 +15,17 @@ char *_strcat(char *dest, char *src)
 
 	i = 0;
 	j = 0;
-	while (dest[j])
+
+	while (dest[i] != '\0')
+		i++;
+	
+	while (src[j] != '\0')
 	{
-                 j++;
+		dest[i] = src[j];
+		i++;
+		j++;	
 	}
-		while (src[i])
-		{
-			dest[j + i] = src[i];
-			i++;
-		}
-		dest[j + i] = '\0';
+	dest[i] = '\0';
+	
 	return (dest);
 }
